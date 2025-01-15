@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context=".ui.home.ReportIssueActivity">
+
+        <include
+            android:id="@+id/headerReport"
+            layout="@layout/common_toolbar"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/headerReport"
+            android:layout_above="@+id/llSubmitReport"
+            >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_16dp"
+            android:layout_marginEnd="@dimen/_16dp"
+            android:orientation="vertical">
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/textViewPoppinSemiBold"
+                android:layout_width="match_parent"
+                android:text="@string/i_need_to_contact_support"
+                android:textColor="@color/black"
+                android:textSize="@dimen/tv_18sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/textViewPoppinRegularFont"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/_16dp"
+                android:text="@string/if_you_re_having_issues_with_a_trip_or_your_account_and_wish_to_speak_to_our_support_team_please_use_the_form_below_to_let_us_know_how_we_can_help"
+                android:textColor="@color/black"
+                android:textSize="@dimen/tv_16sp" />
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="@dimen/_10dp"
+                android:orientation="horizontal">
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/textViewPoppinSemiBold"
+                android:layout_width="match_parent"
+                android:text="@string/select_reason_to_report"
+                android:textColor="@color/black"
+                android:layout_marginTop="@dimen/_25dp"
+                android:textSize="@dimen/tv_18sp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvReportIssueReasons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/textViewPoppinSemiBold"
+                android:layout_width="match_parent"
+                android:text="@string/description"
+                android:textColor="@color/black"
+                android:layout_marginTop="@dimen/_25dp"
+                android:textSize="@dimen/tv_18sp" />
+
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/etDescription"
+                style="@style/EditTextPoppinRegularFont"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_200dp"
+
+                android:layout_marginTop="@dimen/_10dp"
+                android:gravity="start|top"
+                android:inputType="textMultiLine"
+                android:scrollbars="vertical"
+                android:maxLines="7"
+            android:overScrollMode="always"
+                android:padding="@dimen/_13dp"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/llSubmitReport"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true"
+
+            android:background="@android:color/transparent">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btRepostIssueSubmit"
+            style="@style/themeBlueButtonView"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/_20dp"
+
+            android:layout_marginStart="@dimen/_36dp"
+            android:layout_marginEnd="@dimen/_36dp"
+            android:layout_marginBottom="@dimen/_36dp"
+
+            android:text="@string/submit" />
+
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+
+</layout>

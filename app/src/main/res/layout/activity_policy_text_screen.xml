@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white"
+        tools:context=".ui.profile.PolicyTextScreenActivity">
+
+        <include
+            android:id="@+id/headerTerms"
+            layout="@layout/common_toolbar"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_16dp"
+        android:layout_marginTop="@dimen/_16dp"
+        android:layout_marginBottom="@dimen/_70dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvPagesText"
+            style="@style/textViewPoppinRegularFont"
+            android:layout_marginBottom="@dimen/_20dp"
+
+            android:textSize="@dimen/tv_16sp"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+    </ScrollView>
+
+
+    </LinearLayout>
+
+</layout>

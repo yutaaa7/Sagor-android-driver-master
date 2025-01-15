@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/_20dp"
+        tools:context=".ui.home.ProfileFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16dp"
+            android:layout_marginBottom="@dimen/_16dp"
+            android:orientation="vertical">
+
+
+            <include
+                android:id="@+id/headerProfile"
+                layout="@layout/common_toolbar" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/textViewPoppinSemiBold"
+                android:layout_width="match_parent"
+                android:layout_marginStart="@dimen/_16dp"
+                android:layout_marginTop="@dimen/_25dp"
+                android:layout_marginEnd="@dimen/_16dp"
+                android:text="@string/more_info_support"
+                android:textColor="@color/theme_blue"
+                android:textSize="@dimen/tv_16sp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_16dp"
+                android:elevation="@dimen/_8dp"
+                android:shadowColor="@color/gray"
+                android:shadowRadius="10"
+                android:visibility="visible"
+                app:cardCornerRadius="@dimen/_10dp"
+                app:cardElevation="@dimen/_8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_20dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RelativeLayout
+                            android:id="@+id/rlTermsCondition"
+                            android:layout_width="@dimen/_25dp"
+                            android:layout_height="@dimen/_25dp"
+                            android:layout_alignParentStart="true"
+
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/blue_circle">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:contentDescription="@null"
+                                android:src="@drawable/terms" />
+
+
+                        </RelativeLayout>
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tvTermsCondition"
+                            style="@style/textViewPoppinRegularFont"
+                            android:layout_width="match_parent"
+                            android:layout_centerVertical="true"
+                            android:layout_toEndOf="@+id/rlTermsCondition"
+
+                            android:padding="@dimen/_10dp"
+                            android:text="@string/terms_condition"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/tv_16sp" />
+
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:contentDescription="@null"
+                            android:src="@drawable/right" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RelativeLayout
+                            android:id="@+id/rlRefundPolicy"
+                            android:layout_width="@dimen/_25dp"
+                            android:layout_height="@dimen/_25dp"
+                            android:layout_alignParentStart="true"
+
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/blue_circle">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:contentDescription="@null"
+                                android:src="@drawable/refund" />
+
+
+                        </RelativeLayout>
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tvRefundPolicy"
+
+                            style="@style/textViewPoppinRegularFont"
+                            android:layout_width="match_parent"
+                            android:layout_centerVertical="true"
+                            android:layout_toEndOf="@+id/rlRefundPolicy"
+                            android:padding="@dimen/_10dp"
+                            android:text="@string/refund_policy"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/tv_16sp" />
+
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:contentDescription="@null"
+                            android:src="@drawable/right" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RelativeLayout
+                            android:id="@+id/rlPrivacyPolicy"
+                            android:layout_width="@dimen/_25dp"
+                            android:layout_height="@dimen/_25dp"
+                            android:layout_alignParentStart="true"
+
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/blue_circle">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:contentDescription="@null"
+                                android:src="@drawable/user_lock" />
+
+
+                        </RelativeLayout>
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tvPrivacyPolicy"
+
+                            style="@style/textViewPoppinRegularFont"
+                            android:layout_width="match_parent"
+                            android:layout_centerVertical="true"
+                            android:layout_toEndOf="@+id/rlPrivacyPolicy"
+
+                            android:padding="@dimen/_10dp"
+                            android:text="@string/privacy_policy"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/tv_16sp" />
+
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:contentDescription="@null"
+                            android:src="@drawable/right" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <RelativeLayout
+                            android:id="@+id/rlLanguage"
+                            android:layout_width="@dimen/_25dp"
+                            android:layout_height="@dimen/_25dp"
+                            android:layout_alignParentStart="true"
+
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/blue_circle">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:contentDescription="@null"
+                                android:src="@drawable/language" />
+
+
+                        </RelativeLayout>
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tvLanguage"
+                            style="@style/textViewPoppinRegularFont"
+                            android:layout_width="match_parent"
+                            android:layout_centerVertical="true"
+                            android:padding="@dimen/_10dp"
+
+                            android:layout_toEndOf="@+id/rlLanguage"
+                            android:text="@string/language"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/tv_16sp" />
+
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:contentDescription="@null"
+                            android:src="@drawable/right" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+                        <RelativeLayout
+                            android:id="@+id/rlContactUs"
+                            android:layout_width="@dimen/_25dp"
+                            android:layout_height="@dimen/_25dp"
+                            android:layout_alignParentStart="true"
+
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/blue_circle">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:contentDescription="@null"
+                                android:src="@drawable/contact_us" />
+
+
+                        </RelativeLayout>
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tvContactUs"
+                            style="@style/textViewPoppinRegularFont"
+                            android:layout_width="match_parent"
+                            android:layout_centerVertical="true"
+                            android:layout_toEndOf="@+id/rlContactUs"
+
+                            android:padding="@dimen/_10dp"
+                            android:text="@string/contact_us"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/tv_16sp" />
+
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:contentDescription="@null"
+                            android:src="@drawable/right" />
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvLogout"
+                style="@style/textViewPoppinRegularFont"
+                android:layout_width="match_parent"
+                android:layout_marginStart="@dimen/_16dp"
+                android:padding="@dimen/_10dp"
+                android:text="@string/logout"
+                android:textColor="@color/red"
+                android:textSize="@dimen/tv_16sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</layout>

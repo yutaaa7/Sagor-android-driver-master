@@ -1,0 +1,67 @@
+{
+  "project_info": {
+    "project_number": "8526343808",
+    "project_id": "sagoruserapp",
+    "storage_bucket": "sagoruserapp.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:8526343808:android:461ca97f921b8e6d224065",
+        "android_client_info": {
+          "package_name": "com.driver.sagardriverapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBHV80ldcV5cwKwCuHOSpdSn41jRQ4FU1c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:8526343808:android:796c5070a4dd9805224065",
+        "android_client_info": {
+          "package_name": "com.example.sagardriverapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBHV80ldcV5cwKwCuHOSpdSn41jRQ4FU1c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:8526343808:android:56771a0f943bf86b224065",
+        "android_client_info": {
+          "package_name": "com.sagarclientapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBHV80ldcV5cwKwCuHOSpdSn41jRQ4FU1c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+        <RadioButton
+            android:id="@+id/tvReason"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textColor="@color/black"
+            android:textSize="@dimen/tv_14sp"
+            style="@style/textViewPoppinRegularFont"/>
+        <!--<ImageView
+            android:id="@+id/ivCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@null"
+            android:layout_centerVertical="true"
+            android:src="@drawable/cancel_stroke_dot"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/textViewPoppinRegularFont"
+            android:layout_toEndOf="@+id/ivCancel"
+            android:layout_marginStart="@dimen/_16dp"
+            android:text="@string/price_too_high"
+            android:textColor="@color/black"
+            android:textSize="@dimen/tv_14sp" />
+    -->
+
+    </RelativeLayout>
+</layout>

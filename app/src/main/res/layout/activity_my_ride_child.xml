@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <!--<ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@null"
+            android:scaleType="centerCrop"
+            android:src="@drawable/map" />
+-->
+
+        <fragment
+            android:id="@+id/frag_map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:id="@+id/bottomSheetRideForChild"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/solid_bottom_sheet"
+            android:elevation="@dimen/_10dp"
+            android:orientation="vertical"
+            android:visibility="visible"
+            app:layout_behavior="@string/bottom_sheet_behavior">
+
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+
+                    android:orientation="vertical">
+
+
+                    <View
+                        android:layout_width="@dimen/_50dp"
+                        android:layout_height="@dimen/_5dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/_16dp"
+                        android:background="@color/black" />
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10dp"
+                        android:layout_marginTop="@dimen/_10dp"
+                        android:layout_marginEnd="@dimen/_10dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:orientation="horizontal">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/tvSchoolName"
+                                style="@style/textViewPoppinRegularFont"
+                                android:text="American Public School"
+                                android:textColor="@color/gray_7E7E7E"
+                                android:textSize="@dimen/tv_16sp" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:orientation="horizontal">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/tvExpectedTime"
+                                style="@style/textViewPoppinSemiBold"
+                                android:text="10:00 AM"
+                                android:textColor="@color/theme_blue"
+                                android:textSize="@dimen/tv_16sp" />
+
+
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvSchoolId"
+                        style="@style/textViewPoppinLightFont"
+                        android:layout_marginStart="@dimen/_10dp"
+                        android:layout_marginTop="@dimen/_4dp"
+                        android:text="School ID - 1203"
+
+                        android:textColor="@color/gray_7E7E7E"
+                        android:textSize="@dimen/tv_14sp" />
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardChild"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_16dp"
+                        android:elevation="@dimen/_8dp"
+                        android:shadowColor="@color/gray"
+                        android:shadowRadius="10"
+                        android:visibility="visible"
+                        app:cardCornerRadius="@dimen/_10dp"
+                        app:cardElevation="@dimen/_8dp">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:padding="@dimen/_10dp">
+
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_10dp"
+                                android:layout_marginEnd="@dimen/_10dp"
+                                android:layout_marginBottom="@dimen/_10dp">
+
+                                <ImageView
+                                    android:id="@+id/ivDotCircle"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_marginTop="@dimen/_10dp"
+                                    android:src="@drawable/dot_circle" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_marginStart="@dimen/_10dp"
+                                    android:layout_toEndOf="@id/ivDotCircle"
+                                    android:orientation="vertical">
+
+                                    <androidx.appcompat.widget.AppCompatTextView
+                                        android:id="@+id/tvCurrentLocation"
+                                        style="@style/textViewPoppinRegularFont"
+                                        android:layout_width="match_parent"
+                                        android:text="Design Master"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/tv_16sp" />
+
+                                    <androidx.appcompat.widget.AppCompatTextView
+android:id="@+id/tvCurrAdd"
+                                        style="@style/textViewPoppinRegularFont"
+                                        android:layout_width="match_parent"
+                                        android:text="Al Nouf Tower, Sharq kuwait"
+                                        android:textColor="@color/theme_blue"
+                                        android:textSize="@dimen/tv_16sp" />
+
+
+                                </LinearLayout>
+
+                                <View
+                                    android:id="@+id/line"
+                                    android:layout_width="@dimen/_1dp"
+                                    android:layout_height="@dimen/_50dp"
+                                    android:layout_below="@+id/ivDotCircle"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_marginStart="@dimen/_5dp"
+                                    android:background="@color/black" />
+
+                                <ImageView
+                                    android:id="@+id/ivMapPin"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/line"
+                                    android:layout_alignParentStart="true"
+                                    android:src="@drawable/map_pin_blue" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/_10dp"
+                                    android:layout_marginTop="@dimen/_65dp"
+                                    android:layout_toEndOf="@id/ivMapPin"
+                                    android:orientation="vertical">
+
+                                    <androidx.appcompat.widget.AppCompatTextView
+                                        android:id="@+id/tvDestination"
+                                        style="@style/textViewPoppinRegularFont"
+                                        android:layout_width="match_parent"
+                                        android:text="Avenues"
+                                        android:textColor="@color/black"
+
+                                        android:textSize="@dimen/tv_16sp" />
+
+                                    <androidx.appcompat.widget.AppCompatTextView
+android:id="@+id/tvDesAddress"
+                                        style="@style/textViewPoppinRegularFont"
+                                        android:layout_width="match_parent"
+                                        android:text="Al rai Road Kuwait city"
+                                        android:textColor="@color/theme_blue"
+
+                                        android:textSize="@dimen/tv_16sp" />
+                                </LinearLayout>
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvTripsTimeEtc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"/>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btViewChildList"
+                        style="@style/themeBlueButtonView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_36dp"
+                        android:layout_marginTop="@dimen/_10dp"
+                        android:layout_marginEnd="@dimen/_36dp"
+                        android:text="@string/view_child_list" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_3dp"
+                        android:layout_marginTop="@dimen/_10dp"
+                        android:src="@drawable/dotted_line_blue" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btEndTrip"
+                        style="@style/themeRedButtonView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_36dp"
+                        android:layout_marginTop="@dimen/_10dp"
+                        android:layout_marginEnd="@dimen/_36dp"
+                        android:text="@string/end_this_trip" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_1dp"
+                        android:layout_marginTop="@dimen/_10dp"
+                        android:background="@color/gray" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_100dp"
+                        android:layout_marginTop="@dimen/_20dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="@dimen/_0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/call" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/tvCallSchool"
+                                style="@style/textViewPoppinRegularFont"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="@dimen/_5dp"
+                                android:gravity="center"
+                                android:text="@string/call_school"
+
+                                android:textColor="@color/gray_7E7E7E"
+                                android:textSize="@dimen/tv_14sp" />
+
+
+                        </LinearLayout>
+                        <View
+
+                            android:layout_width="@dimen/_1dp"
+                            android:layout_height="@dimen/_30dp"
+
+                            android:background="@color/gray" />
+
+
+                        <LinearLayout
+                            android:id="@+id/llEmergency"
+
+                            android:layout_width="@dimen/_0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:id="@+id/ivEmergency"
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/light_emergency_on" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/tvEmergency"
+
+                                style="@style/textViewPoppinRegularFont"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="@dimen/_5dp"
+                                android:gravity="center"
+                                android:text="@string/emergency"
+
+                                android:textColor="@color/gray_7E7E7E"
+                                android:textSize="@dimen/tv_14sp" />
+
+
+                        </LinearLayout>
+                        <View
+
+                            android:layout_width="@dimen/_1dp"
+                            android:layout_height="@dimen/_30dp"
+
+                            android:background="@color/gray" />
+
+                        <LinearLayout
+                            android:layout_width="@dimen/_0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:id="@+id/btReport"
+                                style="@style/themeRedButtonView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/_38dp"
+
+                                android:text="@string/report" />
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+
+        </LinearLayout>
+
+
+
+
+
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+</layout>

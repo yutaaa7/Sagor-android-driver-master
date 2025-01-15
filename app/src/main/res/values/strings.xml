@@ -1,0 +1,95 @@
+<resources>
+    <string name="app_name">Sagor Driver</string>
+    <string name="google_search_key" translatable="false">AIzaSyBWjRU4OBdbkp8AMVZOhD5v0Z0V28ojCTE</string>
+
+    <string name="driver_login">Driver Login</string>
+    <string name="login">Login</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="forgotten_your_login_details_get_help_with_logging_in">Forgotten your login details? <font color='#244685'><b>Get help with logging in</b></font></string>
+    <string name="trips">Trips</string>
+    <string name="accept">Accept</string>
+    <string name="profile">Profile</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="pool">Pool</string>
+    <string name="time">Time</string>
+    <string name="date">Date</string>
+    <string name="view_trip">View Trip</string>
+    <string name="active">Active</string>
+    <string name="type">Type</string>
+    <string name="accept_this_ride">Accept This Ride</string>
+    <string name="start_trip">Start Trip</string>
+    <string name="customer_details">Customer Details</string>
+    <string name="your_locaiton">Your Locaiton</string>
+    <string name="go">GO</string>
+    <string name="end">END</string>
+    <string name="completed">Completed</string>
+    <string name="your_have_arrived_at_your_destination">You have arrived at your Destination</string>
+    <string name="distance">Distance</string>
+    <string name="arriving_time">Arriving Time</string>
+    <string name="more_info_support"><![CDATA[More Info & Support]]></string>
+    <string name="terms_condition"><![CDATA[Terms & Condition]]></string>
+    <string name="refund_policy">Refund Policy</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="contact_us">Contact us</string>
+    <string name="logout">Logout</string>
+    <string name="account_setting">Account Setting</string>
+    <string name="please_share_a_picture_and_all_relevant_details_we_ll_get_back_to_you_as_soon_as_we_can">Please share a picture and all relevant details. We\'ll get back to you as soon as we can.</string>
+    <string name="sogar_never_ask_for_any_personal_information">Sogar never ask for any personal information</string>
+    <string name="full_credit_card_details_pin_cvv_or_expiry_date">(Full credit card details, PIN, CVV, or Expiry date)</string>
+    <string name="upload_limit_3">Upload limit:3</string>
+    <string name="attach_a_picture">Attach a picture</string>
+    <string name="submit">Submit</string>
+    <string name="are_yo_sure_you_want_to_log_out">Are yo sure you want to Log out</string>
+    <string name="you_want_to_delete_account">you want to Delete Account</string>
+    <string name="delete">Delete</string>
+    <string name="confirmation">Confirmation</string>
+    <string name="cancel">Cancel</string>
+    <string name="history">History</string>
+    <string name="upcoming">Upcoming</string>
+    <string name="ride_completed">Ride Completed</string>
+    <string name="driver_schedule">Driver Schedule</string>
+    <string name="view_child_list">View Child List</string>
+    <string name="call_school">Call School</string>
+    <string name="emergency">Emergency</string>
+    <string name="report">Report</string>
+    <string name="end_this_trip">End this Trip</string>
+    <string name="search">Search</string>
+    <string name="present">Present</string>
+    <string name="child_list">Child List</string>
+    <string name="my_trips">MY Trips</string>
+    <string name="your_toekn_has_been_expired_please_login_again_to_continue_your_services">Your Toekn has been expired.Please Login again to continue your services</string>
+    <string name="ok">Ok</string>
+    <string name="please_enter_user_name">Please Enter User Name</string>
+    <string name="please_enter_password">Please enter Password</string>
+    <string name="no_trips_for_this_date">No Trips for this date</string>
+    <string name="booking_id">"Booking ID: "</string>
+    <string name="one_way">One way</string>
+    <string name="round_trip">Round Trip</string>
+    <string name="pick_up_time">Pick Up Time</string>
+    <string name="pick_up_date">Pick Up Date</string>
+    <string name="school_id">"School ID - "</string>
+    <string name="no_child_found">No Child Found</string>
+    <string name="boarded">Boarded</string>
+    <string name="dropped">Dropped</string>
+    <string name="language">Language</string>
+    <string name="other_lang">العربية</string>
+    <string name="select_language">Select Language</string>
+    <string name="english">English</string>
+    <string name="bus">"BUS- "</string>
+    <string name="no_history_found">No History Found</string>
+    <string name="i_need_to_contact_support">I need to contact support</string>
+    <string name="if_you_re_having_issues_with_a_trip_or_your_account_and_wish_to_speak_to_our_support_team_please_use_the_form_below_to_let_us_know_how_we_can_help">If you\'re having issues with a trip or your account and wish to speak to our Support team, please use the form below to let us know how we can help.</string>
+    <string name="phone_number_on_your_account">Phone number on your account</string>
+    <string name="description">Description</string>
+    <string name="report_an_issue">Report an Issue</string>
+    <string name="select_reason_to_report">Select Reason to Report</string>
+    <string name="please_select_atleast_one_reason">"Please select Atleast one reason "</string>
+    <string name="please_enter_valid_email_address">The Username must be a valid Username.</string>
+    <string name="invalid_credentials">Invalid Credentials</string>
+    <string name="the_password_must_be_at_least_8_characters">The password must be at least 8 characters.</string>
+    <string name="phone_number_must_be_no_more_than_11_digits">Phone number must be no more than 11 digits</string>
+
+
+</resources>

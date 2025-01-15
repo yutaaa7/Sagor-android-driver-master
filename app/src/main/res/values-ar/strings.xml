@@ -1,0 +1,103 @@
+<resources>
+
+
+    <string name="app_name">تطبيق السائق ساغار</string>
+    <string name="google_search_key" translatable="false">AIzaSyBWjRU4OBdbkp8AMVZOhD5v0Z0V28ojCTE</string>
+
+    <string name="driver_login">تسجيل دخول السائق</string>
+    <string name="login">تسجيل الدخول</string>
+    <string name="username">اسم المستخدم</string>
+    <string name="password">كلمة المرور</string>
+    <string name="forgotten_your_login_details_get_help_with_logging_in">نسيت تفاصيل تسجيل الدخول؟ <font color='#244685'><b>احصل على المساعدة لتسجيل الدخول</b></font></string>
+    <string name="trips">الرحلات</string>
+    <string name="accept">قبول</string>
+    <string name="profile">الملف الشخصي</string>
+    <string name="hello_blank_fragment">مرحبًا بالجزء الفارغ</string>
+    <string name="pool">حوض</string>
+    <string name="time">الوقت</string>
+    <string name="date">التاريخ</string>
+
+    <string name="view_trip">عرض الرحلة</string>
+    <string name="active">نشط</string>
+    <string name="type">نوع</string>
+    <string name="accept_this_ride">قبول هذه الرحلة</string>
+    <string name="start_trip">بدء الرحلة</string>
+    <string name="customer_details">تفاصيل العميل</string>
+    <string name="your_locaiton">موقعك</string>
+    <string name="go">اذهب</string>
+    <string name="end">إنهاء</string>
+
+
+    <string name="completed">مكتمل</string>
+    <string name="your_have_arrived_at_your_destination">لقد وصلت إلى وجهتك</string>
+    <string name="distance">المسافة</string>
+    <string name="arriving_time">وقت الوصول</string>
+    <string name="more_info_support">مزيد من المعلومات والدعم</string>
+    <string name="terms_condition">الشروط والأحكام</string>
+    <string name="refund_policy">سياسة الاسترداد</string>
+    <string name="privacy_policy">سياسة الخصوصية</string>
+    <string name="contact_us">اتصل بنا</string>
+    <string name="logout">تسجيل الخروج</string>
+    <string name="account_setting">إعدادات الحساب</string>
+    <string name="please_share_a_picture_and_all_relevant_details_we_ll_get_back_to_you_as_soon_as_we_can">يرجى مشاركة صورة وجميع التفاصيل ذات الصلة. سنعود إليك في أقرب وقت ممكن.</string>
+    <string name="sogar_never_ask_for_any_personal_information">لن يطلب منك ساغار أي معلومات شخصية</string>
+    <string name="full_credit_card_details_pin_cvv_or_expiry_date">(تفاصيل البطاقة الكاملة، الرمز السري أو CVV أو تاريخ انتهاء الصلاحية)</string>
+    <string name="upload_limit_3">حد التحميل: 3</string>
+    <string name="attach_a_picture">إرفاق صورة</string>
+    <string name="submit">إرسال</string>
+
+    <string name="are_yo_sure_you_want_to_log_out">هل أنت متأكد من أنك تريد تسجيل الخروج</string>
+    <string name="you_want_to_delete_account">هل تريد حذف الحساب</string>
+    <string name="delete">حذف</string>
+    <string name="confirmation">تأكيد</string>
+    <string name="cancel">إلغاء</string>
+    <string name="history">السجل</string>
+    <string name="upcoming">القادمة</string>
+    <string name="ride_completed">اكتملت الرحلة</string>
+    <string name="driver_schedule">جدول السائق</string>
+    <string name="view_child_list">عرض قائمة الأطفال</string>
+    <string name="call_school">اتصل بالمدرسة</string>
+    <string name="emergency">الطوارئ</string>
+    <string name="report">تقرير</string>
+    <string name="end_this_trip">إنهاء هذه الرحلة</string>
+    <string name="search">بحث</string>
+    <string name="present">حاضر</string>
+    <string name="child_list">قائمة الأطفال</string>
+    <string name="my_trips">رحلاتي</string>
+    <string name="your_toekn_has_been_expired_please_login_again_to_continue_your_services">انتهت صلاحية الرمز الخاص بك. يرجى تسجيل الدخول مرة أخرى لمواصلة خدماتك</string>
+    <string name="ok">حسنًا</string>
+    <string name="please_enter_user_name">يرجى إدخال اسم المستخدم</string>
+    <string name="please_enter_password">يرجى إدخال كلمة المرور</string>
+    <string name="no_trips_for_this_date">لا توجد رحلات لهذا التاريخ</string>
+    <string name="booking_id">معرف الحجز:</string>
+    <string name="one_way">ذهاب فقط</string>
+    <string name="round_trip">ذهاب وإياب</string>
+    <string name="pick_up_time">وقت الالتقاط</string>
+    <string name="pick_up_date">تاريخ الالتقاط</string>
+    <string name="school_id">معرف المدرسة:</string>
+
+    <string name="no_child_found">لم يتم العثور على أطفال</string>
+    <string name="boarded">على متنها</string>
+    <string name="dropped">تم الإنزال</string>
+    <string name="language">اللغة</string>
+    <string name="other_lang">العربية</string>
+    <string name="select_language">اختر اللغة</string>
+    <string name="english">English</string>
+    <string name="bus">حافلة:</string>
+    <string name="no_history_found">لم يتم العثور على سجل</string>
+    <string name="i_need_to_contact_support">أحتاج إلى الاتصال بالدعم</string>
+    <string name="if_you_re_having_issues_with_a_trip_or_your_account_and_wish_to_speak_to_our_support_team_please_use_the_form_below_to_let_us_know_how_we_can_help">إذا كنت تواجه مشاكل مع الرحلة أو حسابك وتريد التحدث إلى فريق الدعم الخاص بنا، يرجى استخدام النموذج أدناه لإخبارنا كيف يمكننا مساعدتك.</string>
+    <string name="phone_number_on_your_account">رقم الهاتف على حسابك</string>
+    <string name="description">الوصف</string>
+    <string name="report_an_issue">الإبلاغ عن مشكلة</string>
+
+
+    <string name="select_reason_to_report">اختر سبب الإبلاغ</string>
+    <string name="please_select_atleast_one_reason">يرجى اختيار سبب واحد على الأقل</string>
+    <string name="please_enter_valid_email_address">ييجب أن يكون اسم المستخدم اسم مستخدم صالحًا.</string>
+    <string name="invalid_credentials">بيانات الاعتماد غير صالحة</string>
+    <string name="the_password_must_be_at_least_8_characters">يجب أن تتكون كلمة المرور من 8 أحرف على الأقل</string>
+    <string name="phone_number_must_be_no_more_than_11_digits">يجب ألا يزيد رقم الهاتف عن 11 رقمًا</string>
+
+
+</resources>

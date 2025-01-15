@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/solid_white"
+
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvDialogTitle"
+        style="@style/textViewPoppinSemiBold"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_20dp"
+        android:text="@string/confirmation"
+        android:textColor="@color/theme_blue"
+        android:textSize="@dimen/tv_18sp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvDialogSubTitle"
+        style="@style/textViewPoppinSemiBold"
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/_20dp"
+        android:layout_marginTop="@dimen/_5dp"
+        android:layout_marginEnd="@dimen/_20dp"
+        android:text="@string/are_yo_sure_you_want_to_log_out"
+        android:textColor="@color/black"
+        android:textSize="@dimen/tv_15sp" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1dp"
+        android:layout_marginTop="@dimen/_13dp"
+        android:background="@color/black" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50dp"
+
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/negativeButton"
+            android:layout_width="@dimen/_0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+
+            >
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvNegetiveText"
+                style="@style/textViewPoppinSemiBold"
+                android:layout_centerInParent="true"
+                android:text="@string/cancel"
+                android:textColor="@color/theme_blue"
+                android:textSize="@dimen/tv_15sp" />
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="@dimen/_1dp"
+            android:layout_height="match_parent"
+            android:background="@color/black" />
+
+        <RelativeLayout
+            android:id="@+id/positiveButton"
+            android:layout_width="@dimen/_0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvPostiveText"
+
+                style="@style/textViewPoppinSemiBold"
+                android:layout_centerInParent="true"
+                android:text="@string/logout"
+                android:textColor="@color/red"
+                android:textSize="@dimen/tv_15sp" />
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

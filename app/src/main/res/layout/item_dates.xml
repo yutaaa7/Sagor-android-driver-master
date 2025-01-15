@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/llDates"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10dp"
+            android:background="@drawable/solid_green"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvDate"
+                style="@style/textViewPoppinRegularFont"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="23"
+                android:textColor="@color/theme_blue"
+                android:textSize="@dimen/tv_14sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvMonth"
+                style="@style/textViewPoppinRegularFont"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="April"
+                android:textColor="@color/theme_blue"
+                android:textSize="@dimen/tv_14sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1.4dp"
+        android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/_2dp"
+        android:background="@drawable/vertical_dotted_line_blue" />
+
+
+    </LinearLayout>
+
+</layout>

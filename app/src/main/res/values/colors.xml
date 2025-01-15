@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="theme_blue">#244685</color>
+    <color name="edit_text_title">#214782</color>
+    <color name="light_blue">#CAEFFF</color>
+    <color name="gray">#C9CED6</color>
+    <color name="gray_E6E6E6">#E6E6E6</color>
+    <color name="gray_707070">#707070</color>
+    <color name="gray_7E7E7E">#7E7E7E</color>
+    <color name="gray_C1C4C9">#C1C4C9</color>
+    <color name="red">#FF0000</color>
+    <color name="gray_F5F5F5">#F5F5F5</color>
+    <color name="gray_E5E5E5">#E5E5E5</color>
+    <color name="gray_AAADB2">#AAADB2</color>
+    <color name="sky_blue">#CAEFFF</color>
+    <color name="blue_789BFB">#789BFB</color>
+    <color name="green">#16A128</color>
+    <color name="red_D21320">#D21320</color>
+
+
+</resources>

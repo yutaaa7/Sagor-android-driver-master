@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/main"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.home.HomeActivity">
+
+        <FrameLayout
+            android:id="@+id/fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/llBottomBar" />
+
+
+        <LinearLayout
+            android:id="@+id/llBottomBar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_80dp"
+            android:layoutDirection="locale"
+            android:layout_alignParentBottom="true"
+            android:background="@color/theme_blue"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:id="@+id/llTrips"
+                android:layout_width="@dimen/_0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/rlHomeFocus"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_44dp"
+                    android:layout_gravity="center"
+                    android:visibility="visible"
+                    android:background="@drawable/solid_white"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/_10dp"
+                        android:layout_marginEnd="@dimen/_10dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/road_blue" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            style="@style/textViewPoppinSemiBold"
+                            android:layout_gravity="center"
+
+                            android:layout_marginStart="@dimen/_10dp"
+                            android:text="@string/trips"
+                            android:textColor="@color/theme_blue"
+                            android:textSize="@dimen/tv_12sp" />
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlHome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_10dp"
+
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/road"/>
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llAccepts"
+                android:layout_width="@dimen/_0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/rlTrips"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_10dp"
+                    android:visibility="visible">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/road"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlTripsFocus"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_44dp"
+                    android:layout_gravity="center"
+                    android:visibility="gone"
+                    android:background="@drawable/solid_white"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/_10dp"
+                        android:layout_marginEnd="@dimen/_10dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/_22dp"
+                            android:layout_height="@dimen/_22dp"
+                            android:src="@drawable/road_blue" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            style="@style/textViewPoppinSemiBold"
+
+                            android:layout_marginStart="@dimen/_10dp"
+                            android:text="@string/accept"
+                            android:layout_gravity="center"
+                            android:textColor="@color/theme_blue"
+                            android:textSize="@dimen/tv_12sp" />
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/llProfile"
+                android:layout_width="@dimen/_0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/rlSettings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_10dp"
+
+                    android:visibility="visible">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/settings"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlSettingsFocus"
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_44dp"
+                    android:layout_gravity="center"
+
+                    android:background="@drawable/solid_white"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/_10dp"
+                        android:layout_marginEnd="@dimen/_10dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/_22dp"
+                            android:layout_height="@dimen/_22dp"
+                            android:src="@drawable/settings_blue" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            style="@style/textViewPoppinSemiBold"
+                            android:layout_gravity="center"
+
+                            android:layout_marginStart="@dimen/_10dp"
+                            android:text="@string/profile"
+                            android:textColor="@color/theme_blue"
+                            android:textSize="@dimen/tv_12sp" />
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</layout>
